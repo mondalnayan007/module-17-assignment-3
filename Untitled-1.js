@@ -1,8 +1,8 @@
 /** Problem 04 - (Delete / Store) */
-var fileName= "docx.pdf.xpdf";
+var fileName= "docx.xpdf";
 //write your code here
 
-if( fileName.startsWith("#") || fileName.endsWith(".pdf") || fileName.endsWith(".docx")){
+if( fileName[0] === "#" || fileName.includes(".pdf") || fileName.includes(".docx")){
     console.log("Store");
 }
 else{
